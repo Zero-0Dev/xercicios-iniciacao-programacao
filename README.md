@@ -1,1 +1,1 @@
-# xercicios-iniciacao-programacao
+# exercicios-iniciacao-programacao
