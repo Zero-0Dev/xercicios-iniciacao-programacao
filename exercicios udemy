@@ -1,0 +1,724 @@
+Algoritmo "nota"
+// 
+//  
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 5/5/2025
+Var
+  notaFinal ,notaR1 ,notaR2 :real
+
+Inicio
+   escreva("qual foi sua nota R1")
+    leia(notaR1)
+   escreva("qual foi a nota de R2")
+    leia(notaR2)
+      notaFinal<-(notaR1+notaR2)
+        se (notaFinal>=60.00)entao
+    escreva("parabens corno VOCE ESTA  aprovado")
+          senao
+    escreva("hahaha se fudeo REPROVADO ")
+          fimse
+      
+Fimalgoritmo
+
+
+
+
+
+
+Algoritmo "baskara"
+
+Var
+   a,b,c,delta,x1,x2:real
+
+
+Inicio
+   escreva("Qual o coeficiente A")
+    leia (a)
+     escreva("Qual o coeficiente de B")
+      leia (b)
+       escreva("qual o coeficiente C")
+       leia(c)
+ delta<-(exp(b,2)-(4*a*c))
+   se (delta<0)entao
+       escreva(" Deu negativo seu troxa")
+   senao
+       x1<-(-b+raizq(delta)\(2*a))
+       x2<-(-b-raizq(delta)\(2*a))
+
+    fimse
+       escreva ("o valor de x1 é ",x1:2:3," e o valor de x2 é",x2:2:3)
+
+
+
+
+Fimalgoritmo
+
+
+
+
+Algoritmo "menor de tres"
+
+Var
+menor,a,b,c:inteiro
+
+  inicio
+        escreva("Digite o priemeiro numero")
+        leia   (a)
+        escreva("digite o segundo numero")
+        leia   (b)
+        escreva("Digite o terceiro numero")
+        leia   (c)
+  
+        se (a=b)e(b=c)entao
+         escreva("todos numeros são iguais")
+        senao
+       se (a<b)e(a<c)entao
+         menor<-a
+       escreva("o menor numero é o primeiro",a.)
+         senao
+.             se(b<c)entao
+       menor<-b
+                escreva("o menor numero é o segundo",b)
+          senao
+              menor<-c
+       fimse
+           fimse
+              fimse
+
+Fimalgoritmo
+
+
+Algoritmo "operadora"
+
+var
+ minutos:inteiro
+ valorpago:real
+Inicio
+  escreva("Qual foi a quantidade de tempo consumida")
+  leia   (minutos)
+  valorpago<-50
+  
+     se (minutos<=100) entao
+        valorpago<-50
+        escreva("o valor da fatura é R$ 50")
+      senao
+          se (minutos>100)entao
+             valorpago<-valorpago+ 2*(minutos-100)
+             escreva("o valor a se pago é: ",valorpago)
+          fimse
+     fimse
+  
+.
+
+
+Fimalgoritmo
+
+
+
+
+Algoritmo "troco_verificado"
+var
+troco,preco,dinheiro,resto,pago:real
+quantidade:inteiro
+
+
+ //Se o dinheiro dado pelo cliente não for suficiente,
+  //mostrar uma mensagem informando o valor restante
+
+Inicio
+    escreva("Qual é o preço do produto?")
+    leia   (preco)
+    escreva("Qual foi a quantidade de produto comprado")
+    leia   (quantidade)
+    dinheiro<- preco*quantidade
+    escreva("pode me informar quanto voce dara de dinheiro?")
+    leia   (pago)
+       se  pago<dinheiro entao
+       troco<-pago-dinheiro
+       escreva(" a compra deu R$",dinheiro,"falta R$",troco)
+         senao
+             se pago>dinheiro entao
+             troco<-pago-dinheiro
+               escreval("A compra deu,",dinheiro,"e seu troco é R$",troco)
+
+             fimse
+       fimse
+
+Fimalgoritmo
+
+
+
+
+Algoritmo "glicose"
+/
+Var
+     glicose:real
+
+Inicio
+   escreva("qualé o valor dado de glicose")
+   leia   (glicose)
+        se glicose<=100 entao
+          escreva("O valor esta dentro da normalidade")
+           senao
+                se (glicose>100)e (glicose<=140)entao
+                escreva("A glicose esta elevada CUIDADO")
+                  senao
+                     se glicose>140 entao
+                     escreva("diabetes ein se fudeu")
+
+                     fimse
+                fimse
+        fimse
+Fimalgori
+
+
+
+
+Algoritmo "glicose"  corrigido
+/
+Var
+     glicose:real
+
+Inicio
+   escreva("qualé o valor dado de glicose")
+   leia   (glicose)
+        se glicose<=100 entao
+          escreva("O valor esta dentro da normalidade")
+           senao
+                se (glicose>100)e (glicose<=140)entao
+                //na teoria nao precisa repitir"glicose>100
+                //poderia colocar"se glicose<=140entao
+                escreva("A glicose esta elevada CUIDADO")
+                  senao
+                     se glicose>140 entao
+                     escreva("diabetes ein se fudeu")
+
+                     fimse
+                fimse
+        fimse
+Final
+
+ Algoritmo "dardo"
+
+Var
+t1,t2,t3:inteiro
+Inicio
+    escreva("Qual foi o primeiro tempo")
+     leia(t1)
+      escreva("Qual foi o segundo tempo")
+       leia(t2)
+        escreva("o terceiro tempo")
+         leia(t3)
+          se (t1>t2)e(t1>t3)entao
+           escreva("primeiro é o maior")
+            senao
+             se  t2>t3 entao
+              escreva("segundo maior")
+               senao
+                escreva(" o terceiro é maior")
+                 senao
+                  se (t1=t2)e(t2=t3)entao
+                   escreva("os 3 numeros deu igual")
+                    senao
+                     se(t1=t2)entao
+                      escreva( "os seguintes valores deu igual",t1,t2)
+                       se t2=t3 entao
+                        escreva("os valores ...",t2,"e"t3)
+                         se t2=t3 entao
+                         escreva("igual"t1,t3)
+                         fimse
+                       fimse
+                     fimse
+                  fimse
+             fimse
+          fimse
+Fimalgoritmo
+////////viajei 
+
+professor
+
+
+Algoritmo "dardo"
+
+Var
+
+   d1, d2, d3, maior : real
+
+Inicio
+
+   escreval("Digite as tres distancias:")
+   leia(d1)
+   leia(d2)
+   leia(d3)
+
+   se (d1 > d2) e (d1 > d3) entao
+      maior <- d1
+   senao
+      se d2 > d3 entao
+         maior <- d2
+      senao
+         maior <- d3
+      fimse
+   fimse
+   
+   escreval("MAIOR DISTANCIA = ", maior:6:2)
+
+Fimalgoritmo
+
+
+Algoritmo "temperatura"
+
+Var
+ c,f:real
+ escala:caractere
+
+Inicio
+   escreva("Qual medida de temperatura vc quer verF/C?")
+    leia(escala)
+     se escala=c entao
+      escreva("escreva a temperatura em C")
+       leia  (c)
+        f<-(c*9/5)+32
+         escreva("A temperatura em F é:",f )
+          senao
+           se escala=f entao
+            escreva("Escreva a temperatura em f")
+             leia  (f)
+              c<-(f-32)*5/9
+                escreva(A temperatura em C é;",c)
+           fimse
+     fimse
+
+
+Fimalgoritmo
+
+(errei)
+Algoritmo "temperatura"
+Var
+ c,f:real
+ escala:caractere
+Inicio
+   escreva("Qual medida de temperatura vc quer verF/C?")
+    leia(escala)
+     se escala="C" entao
+      escreva("escreva a temperatura em C")
+       leia  (c)
+        f<-(c*9/5)+32
+         escreva("A temperatura em F é:",f )
+          senao
+           se escala="F" entao
+            escreva("Escreva a temperatura em f")
+             leia  (f)
+              c<-(f-32)*5/9
+                escreva("A temperatura em C é:",c)
+           fimse
+     fimse
+Fimalgoritmo
+(corrigido)
+Algoritmo "temperatura"
+Var
+   c, f: real
+   escala: caractere
+Inicio
+   escreva("Qual medida de temperatura você quer ver? (F/C): ")
+   leia(escala)
+
+   se escala = "C" entao
+      escreva("Digite a temperatura em Fahrenheit: ")
+      leia(f)
+      c <- (f - 32) * 5 / 9
+      escreva("A temperatura em Celsius é: ", c:6:2)
+
+   senao
+      se escala = "F" entao
+         escreva("Digite a temperatura em Celsius: ")
+         leia(c)
+         f <- (c * 9 / 5) + 32
+         escreva("A temperatura em Fahrenheit é: ", f:6:2)
+      senao
+         escreva("Escala inválida. Digite apenas 'F' ou 'C'.")
+      fimse
+   fimse
+Fimalgoritmo
+ 
+ 
+ algoritimo "lanchonete"
+
+var  
+codigo,quantidade:inteiro
+preco,total:inteito 
+
+inicio 
+  escreva("Qual o codigo do produto")
+   leia(codigo)
+    escreva("Qual a quantidade comprada?")
+     leia(quantidade)
+    se (codigo=1)entao 
+      preco<-5*quantidade
+         total<-preco 
+          escreva("o total da compra é R$ ",preco)
+           senao 
+            se (codigo=2) entao 
+             preco<-3.50*quantidade
+              total<-preco 
+               escreva("o total da compra é R$ ", preco)
+                senao 
+                 Se (codigo=3)entao 
+                  preco<-4.80*quantidade
+                   total<-preco 
+                    escreva("o total da compra é R$ ", preco)
+                     senao 
+                      se (codigo=4)entao 
+                       preco<-8.90*quantidade 
+                       total<-preco 
+                        escreva("o total da compra é R$ ", preco)
+                        senao 
+                         se (codigo=5)entao 
+                    preco<-7.32*quantidade
+                    total<-preco
+                     escreva("o total da compra é R$ ", preco)      
+                        
+                         
+                        
+                      
+                         fimse 
+                    
+                      fimse
+                 fimse
+            fimse 
+    
+    fimse
+    
+    
+    
+    
+    lgoritimo "lanchonete"
+
+var  
+codigo,quantidade:inteiro
+preco,total:inteito 
+
+inicio 
+  escreva("Qual o codigo do produto")
+   leia(codigo)
+    escreva("Qual a quantidade comprada?")
+     leia(quantidade)
+    se (codigo=1)entao 
+      preco<-5*quantidade
+         total<-preco 
+          escreva("o total da compra é R$ ",preco)
+           senao 
+            se (codigo=2) entao 
+             preco<-3.50*quantidade
+              total<-preco 
+               escreva("o total da compra é R$ ", preco)
+                senao 
+                 Se (codigo=3)entao 
+                  preco<-4.80*quantidade
+                   total<-preco 
+                    escreva("o total da compra é R$ ", preco)
+                     senao 
+                      se (codigo=4)entao 
+                       preco<-8.90*quantidade 
+                       total<-preco 
+                        escreva("o total da compra é R$ ", preco)
+                        senao 
+                         se (codigo=5)entao 
+                    preco<-7.32*quantidade
+                    total<-preco
+                     escreva("o total da compra é R$ ", preco)      
+                        
+                         
+                        
+                      
+                         fimse 
+                    
+                      fimse
+                 fimse
+            fimse 
+    
+    fimse
+    corrigido por mim kkkkkkkkkkkkkkkkkkkkkkkkkk
+     Algoritmo "crescente"
+
+Var
+ x,y:inteiro
+
+Inicio
+ ESCREVA("digite o valor de x ")
+  leia  (x)
+ escreva("digite o valor de y")
+  leia  (y)
+     enquanto x<>y faca
+   se x<y entao
+    escreval("crescente")
+    senao
+     escreval("decrescente")
+     escreval("um novo valor de x")
+      leia  (x)
+     escreval("um novo valor de y")
+      leia  (y)
+      fimse
+    fimenquanto
+
+
+Fimalgoritmo
+
+
+(deu erro)
+
+Algoritmo "crescente"
+
+Var
+ x,y:inteiro
+
+Inicio
+ ESCREVA("digite o valor de x ")
+  leia  (x)
+ escreva("digite o valor de y")
+  leia  (y)
+     enquanto x<>y faca
+   se x<y entao
+    escreval("crescente")
+    senao
+     escreval("decrescente")
+   fimse
+     escreval("um novo valor de x")
+      leia  (x)
+     escreval("um novo valor de y")
+      leia  (y)
+
+    fimenquanto
+
+
+Fimalgoritmo
+(deu bom)
+
+
+
+Algoritmo "media-idades"
+
+Var
+ idade,soma,cont:inteiro
+ media:real
+
+Inicio
+ soma<-0
+ cont<-0
+  escreval("Escreva as idades")
+   leia (idade)
+    enquanto idade>=0 faca
+     soma<-soma+idade
+     cont<-cont+1
+  //lembra que deve ser identificado um valor inicial em somas
+  //acumulativa (x<-0) vc declara um valor inicial que sera
+  //substituido a cada nova soma,a msm logica no cont
+  // essa logica é para resolver"calcular e imprimir a idade media..."
+      leia(idade)
+  fimenquanto
+   se cont= 0 entao
+   escreval("impossivel calcular")
+   // cont=0 se refere se no inicio ja der o valor - (idade>=0)
+    media<-soma/cont
+     escreval("Media",media2:3)
+   fimse
+Fimalgoritmo
+(deu ruim)
+
+
+Algoritmo "semnome"
+
+Var
+   idade,soma,cont:inteiro
+   media:real
+
+
+Inicio
+  soma<-0         //Inicializa a soma em 0
+  cont<-0         // Inicializa o contador em 0
+  
+  escreval("digite as idades")
+  leia(idade)
+   enquanto idade>=0 faca
+   soma<-soma+idade
+   cont<-cont+1
+  leia (idade)
+   fimenquanto
+  se cont=0 entao
+   escreval("impossivel de calcular")
+    senao
+     media<-soma/cont
+     escreval("media",media:8:2)
+  fimse
+
+
+
+Fimalgoritmo
+
+(ainda confuso)
+
+Algoritmo "media-idades-v2"
+
+Var
+   idade, soma, cont : inteiro
+   media            : real
+
+Inicio
+   soma <- 0
+   cont <- 0
+
+   escreval("Digite uma idade :")
+   leia(idade)
+
+   enquanto idade >= 0 faca
+      soma <- soma + idade
+      cont <- cont + 1
+      escreval("Digite outra idade :")
+      leia(idade)
+   fimenquanto
+
+   se cont = 0 entao   // essa linha so vai rodar se no inico
+                       // ja for dado um numero -
+      escreval("IMPOSSIVEL CALCULAR")
+   senao
+      media <- soma / cont     // essa so vai rodar apenas quando
+                               // tiver os numeros >0 e quando
+                                // finalizar quando aparecer um <
+                                // que seria o negativo
+      escreval("MEDIA = ", media:8:2)
+   fimse
+Fimalgoritmo
+(melhor que o do professor)
+
+
+Algoritmo "Para"
+
+Var
+  n,soma:inteiro
+
+
+Inicio
+  soma<-0
+   escreval("Quantos numero serao digitados?")
+    leia   (n)
+     para n de 1 ate 3 faca
+      escreva(" escreva o proximo numero")
+       leia  (n)
+       soma<-soma+n
+     fimpara
+
+         escreval("O valor da soma é,",soma)
+
+
+Fimalgoritmo
+
+(entendi ?)
+
+
+
+Enunciado do Exercício:
+Faça um algoritmo que peça o nome e a idade de 5 pessoas.
+
+Ao final, mostre uma lista com o nome de cada pessoa e sua idade.
+
+Também informe quem é a pessoa mais velha.
+
+
+Algoritmo "Cadastro"
+
+Var
+  senior,nome:caractere
+  pessoas,idade:inteiro
+
+
+Inicio
+    para pessoas de 1 ate 5 faca
+    escreval("escreva os nomes e idades respectivamente")
+    leia (nome)
+    leia (idade)
+     fimpara
+    senior,<-(idade>idade)
+    escreval("o mais velhor é",senior)
+Fimalgoritmo
+
+  primeira tentativa
+  
+  
+  Algoritmo "Cadastro"
+ //Faça um algoritmo que peça o nome e a idade de 5 pessoas.
+ // tambem informe a mais velha
+Var
+  senior,nome:caractere
+  maiorIdade,idade,i:inteiro
+
+
+Inicio
+ maiorIdade<-0
+    para i de 1 ate 5 faca
+    escreval("escreva os nomes e idades respectivamente")
+    leia (nome)
+    leia (idade)
+    se idade > maiorIdade entao
+      maiorIdade<- idade
+      senior <- nome
+    fimse
+  fimpara
+
+  escreval("A pessoa mais velha é ", senior, " com ", maiorIdade, " anos.")
+
+Fimalgoritmo
+final haha
+
+Var
+  N, i, x, soma: inteiro
+Inicio
+  escreva("Quantos números serão digitados? ")
+  leia(N)
+  soma <- 0
+
+  para i de 1 ate N faca
+    escreva("Digite um numero: ")
+    leia(x)
+    soma <- soma + x
+  fimpara
+
+  escreval("SOMA = ", soma)
+
+Algoritmo "Crescente"
+
+Var
+
+   x,y:inteiro
+   
+
+Inicio
+  x<-0
+  y<-0
+
+    escreval("escreva o valor de x e y")
+
+    leia(x)
+    leia(y)
+     enquanto x<>y faca
+
+      se (x<y) entao
+       escreva("Esta ordem é crescente")
+       senao
+        se x>y entao
+        escreval("Esta ordem é decrescente")
+
+        fimse
+      fimse
+      escreval("escreva o valor de x e y")
+        leia (x)
+        leia (y)
+     fimenquanto
+     
+  
+  
+.
+
+
+Fimalgoritmo
+(ace)
